@@ -23,5 +23,15 @@
             "Vanilla Base"
         ],
         "image": "https://priyansht.github.io/23F-JavaScript-03-Week11/images/peach-mango.svg"
+    }, {
+        "name": "Strawberry Sprinkle",
+        "calories": 400,
+        "type": "ice-cream",
+        "ingredients": [
+            "Strawberry Chunks",
+            "Sprinkles",
+            "Vanilla Base"
+        ],
+        "image": "https://priyansht.github.io/23F-JavaScript-03-Week11/images/strawberry-sprinkle.svg"
     }]
 }

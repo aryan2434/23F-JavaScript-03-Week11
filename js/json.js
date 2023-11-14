@@ -58,11 +58,27 @@ function showTopFlavors(jsonData) {
         p2.textContent = `Type: ${topFlavors[i].type}`;
         image.setAttribute("src", topFlavors[i].image) // <img src="image-location">
         // STEP 10g: Build a loop for the ingredients array in the JSON
+        const ingredients = topFlavors[i].ingredients;
+        for (let j = 0; j < ingredients.length; j++) {
+            console.log(ingredients[j]);
+            const listItem = document.createElement("li"); // <li></li>
+            listItem.textContent = ingredients[j];
+            list.appendChild(listItem); // // <ul><li></li></ul>
+            // after 3 times:
+            /*
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            */
+        }
 
         // STEP 10i: Append each complete ARTICLE element to the SECTION element
         article.appendChild(h2);
         article.appendChild(p1);
         article.appendChild(p2);
+        article.appendChild(list);
         article.appendChild(image);
         section.appendChild(article);
     }
