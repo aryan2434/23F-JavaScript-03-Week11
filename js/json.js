@@ -63,6 +63,7 @@ function showTopFlavors(jsonData) {
         article.appendChild(h2);
         article.appendChild(p1);
         article.appendChild(p2);
+        article.appendChild(image);
         section.appendChild(article);
     }
 }
